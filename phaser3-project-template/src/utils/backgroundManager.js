@@ -10,6 +10,6 @@ export function setBackground(scene, backgroundTexture) {
   // (CSS의 background-repeat: repeat; 같은 느낌)
   // setOrigin : 원점(0, 0)의 위치를 설정해주는 함수
   scene.m_background = scene.add
-    .tileSprite(0, 0, Config.width, Config.height, backgroundTexture)
+    .tileSprite(0, 0, Config.width * 2, Config.height * 2, backgroundTexture)
     .setOrigin(0, 0);
 }

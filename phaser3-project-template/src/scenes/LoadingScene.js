@@ -10,15 +10,17 @@ export default class LoadingScene extends Phaser.Scene {
 
   preload() {
     //IMAGE
-    this.load.image("backgrround1", MY_IMAGES.images.background1);
-    this.load.image("backgrround2", MY_IMAGES.images.background2);
-    this.load.image("backgrround3", MY_IMAGES.images.background3);
+    this.load.image("background1", MY_IMAGES.images.background1);
+    this.load.image("background2", MY_IMAGES.images.background2);
+    this.load.image("background3", MY_IMAGES.images.background3);
     this.load.image("beam", MY_IMAGES.images.beam);
 
     //SPRITESHEETS
     this.load.spritesheet("player", MY_SPRITESHEETS.spritesheets.player, {
-      frameWidth: 32,
-      frameHeight: 36,
+      frameWidth: 64,
+      // frameWidth: 45,
+      frameHeight: 64,
+      // frameHeight: 50,
     });
 
     this.load.spritesheet("mob1", MY_SPRITESHEETS.spritesheets.mob1, {
@@ -27,8 +29,8 @@ export default class LoadingScene extends Phaser.Scene {
     });
 
     this.load.spritesheet("mob2", MY_SPRITESHEETS.spritesheets.mob2, {
-      frameWidth: 28,
-      frameHeight: 28,
+      frameWidth: 32,
+      frameHeight: 32,
     });
     this.load.spritesheet("mob3", MY_SPRITESHEETS.spritesheets.mob3, {
       frameWidth: 28,
